@@ -1,0 +1,9 @@
+body{
+    background-image: url(/img/conceito-de-controle-de-qualidade-padrao-m_23-2150041859.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row .registro .card{
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+}
