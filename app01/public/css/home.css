@@ -5,5 +5,9 @@ body{
 }
 .row .registro .card{
     background: rgba(0, 0, 0, 0.6);
-    margin-top: 50px;
+    margin-top: 100px;
+}
+.row .consultar .modal{
+    background: rgba(44, 143, 224, 0.6);
+    margin-top: 100px;
 }

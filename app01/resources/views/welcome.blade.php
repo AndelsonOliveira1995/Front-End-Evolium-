@@ -39,7 +39,27 @@
                             <button type="submit" title="Registrar" class="btn waves-effect blue">
                                 <i class="material-icons">send</i>
                             </button>
-                            <a href="#" class="white-text">Click no link para consultar um número</a>
+                            <a href="#modal" class="white-text modal-trigger">Click no link para consultar um número</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Modal de consulta de números --}}
+    <div class="row">
+        <div class="col s12 l4 m3 consultar">
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <form action="" method="post">
+                        @csrf
+                        <div class="input-field m3">
+                            <input type="search" name="pesquisa" id="pesquisa" class="white grey-text">
+                            <label for="pesquisa"><i class="material-icons">search</i></label>
+                        </div>
+                        <div class="input-field m3">
+                            <button class="weves-effect btn red modal-close"><i class="material-icons">close</i></button>
                         </div>
                     </form>
                 </div>
@@ -50,5 +70,10 @@
 
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script>
 </body>
 </html>
