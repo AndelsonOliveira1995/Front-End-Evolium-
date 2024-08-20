@@ -18,7 +18,7 @@
                     <h5 class="text-center white-text">Registro de Números de Telefones</h5>
                 </div>
                 <div class="card-content">
-                    <form action="" method="post">
+                    <form action="{{ route('registrar') }}" method="post">
                         @csrf
                         <div class="input-field m3">
                             <input type="text" class="white grey-text" name="nome" id="nome">
@@ -52,14 +52,14 @@
         <div class="col s12 l4 m3 consultar">
             <div class="modal" id="modal">
                 <div class="modal-content">
-                    <form action="" method="post">
+                    <form action="#" method="post">
                         @csrf
                         <div class="input-field m3">
-                            <input type="text" name="pesquisa" id="pesquisa" class="white grey-text">
+                            <input type="search" name="pesquisa" id="pesquisa" class="white grey-text">
                             <label for="pesquisa"><i class="material-icons">search</i></label>
                         </div>
                         <div class="input-field m3">
-                            <button class="weves-effect btn red modal-close"><i class="material-icons">close</i></button>
+                            <a class="weves-effect btn red modal-close" title="Fechar"><i class="material-icons">close</i></a>
                         </div>
                     </form>
                 </div>
