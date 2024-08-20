@@ -55,7 +55,7 @@
                     <form action="" method="post">
                         @csrf
                         <div class="input-field m3">
-                            <input type="search" name="pesquisa" id="pesquisa" class="white grey-text">
+                            <input type="text" name="pesquisa" id="pesquisa" class="white grey-text">
                             <label for="pesquisa"><i class="material-icons">search</i></label>
                         </div>
                         <div class="input-field m3">
