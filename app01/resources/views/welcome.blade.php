@@ -21,8 +21,25 @@
                     <form action="" method="post">
                         @csrf
                         <div class="input-field m3">
-                            <input type="text" name="nome" id="nome">
-                            <label for="nome" class="grey-text">Nome Completo</label>
+                            <input type="text" class="white grey-text" name="nome" id="nome">
+                            <label for="nome" class="grey-text">
+                                <i class="material-icons">person</i> Nome Completo</label>
+                        </div>
+                        <div class="input-field m3">
+                            <input type="number" class="white grey-text" name="telefone" id="telefone">
+                            <label for="telefone" class="grey-text">
+                                <i class="material-icons">phone</i> Telefone</label>
+                        </div>
+                        <div class="input-field m3">
+                            <input type="email" class="white grey-text" name="email" id="email">
+                            <label for="email" class="grey-text">
+                                <i class="material-icons">email</i> Endereço de Email</label>
+                        </div>
+                        <div class="input-field m3">
+                            <button type="submit" title="Registrar" class="btn waves-effect blue">
+                                <i class="material-icons">send</i>
+                            </button>
+                            <a href="#" class="white-text">Click no link para consultar um número</a>
                         </div>
                     </form>
                 </div>
